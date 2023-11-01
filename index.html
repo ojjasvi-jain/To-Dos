@@ -9,13 +9,28 @@
   <body>
     <div class="container">
       <div class="inner-container">
+        <div class="rowPerPageCount">
+          <label for="page_selector"> select items per page</label>
+          <select id="page_selector">
+            <option value="1">1</option>
+            <option value="5">5</option>
+            <option value="10" selected>10</option>
+            <option value="20">20</option>
+            <option value="50">50</option>
+          </select>
+        </div>
         <h1>Let's Start TO-DO list</h1>
+
         <input type="text" class="toDo-input" />
         <div class="task_wrapper">
           <div class="bottom_style"></div>
         </div>
+        <footer class="footer">
+          <div class="page"></div>
+        </footer>
       </div>
     </div>
     <script src="./script.js"></script>
+    <!-- https://www.youtube.com/watch?v=HqGYi40oOow -->
   </body>
 </html>

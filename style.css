@@ -11,7 +11,7 @@ body {
   height: 90vh;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .toDo-input {
@@ -64,8 +64,8 @@ body {
 .task_wrapper {
   display: flex;
   flex-direction: column;
-  overflow: auto;
-  max-height: 500px;
+  overflow-y: auto;
+  max-height: 70vh;
 }
 
 .done {
@@ -82,4 +82,39 @@ body {
 
 .hide {
   display: none;
+}
+
+#page_selector {
+  width: 60px;
+  height: 30px;
+}
+
+.rowPerPageCount {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.page {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 30px;
+}
+
+.block {
+  width: 30px;
+  height: 30px;
+  background-color: #c3bcbc;
+  color: #fff;
+  cursor: pointer;
+  margin: 5px;
+  text-align: center;
+}
+
+.text_cont {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
 }
